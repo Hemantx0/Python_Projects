@@ -7,8 +7,11 @@ def nums(a,b):
         return a * b
     elif opertator == "/":
         return a / b
+    else:
+        return "Invalid operator"
 
 opertator = input("Select your operator(+, -, *, /): ")
 a = float(input("Enter 1st number : "))
 b = float(input("Enter 2nd number : "))
-print(f"Your answer is {nums(a,b)}")
+result = nums(a,b)
+print(f"Your answer is {result}")
